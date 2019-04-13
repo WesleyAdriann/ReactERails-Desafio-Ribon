@@ -3,9 +3,14 @@ import React from 'react';
 const Pokemon = props => {
     return (
         <div className="col-sm-3 m-1 p-1 border rounded" key={props.id}>
-            <div className="media">
-                <img className="mr-3" src={props.imagem} alt={props.nome}/>
-                <div className="media-body">
+            <div className="media" >
+                <img 
+                    className="mr-3"
+                    src={props.imagem}
+                    alt={props.nome}
+                    onClick={() => {props.handleChain(props.evochain)}}
+                />
+                <div className="media-body" onClick={() => {props.handleChain(props.evochain)}}>
                     <h5 className="mt-0">{props.nome}</h5>
                     PokeID: {props.id}<br/>
                     <h6>{props.tipo1} - {props.tipo0}</h6>

@@ -4,8 +4,6 @@ import axios from 'axios';
 import Navbar from './components/Navbar';
 import Pokemon from './components/Pokemon';
 
-
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -19,7 +17,6 @@ class App extends Component {
     this.clearFilters = this.clearFilters.bind(this);
   }
 
-  
   componentDidMount() {
     axios.get('http://localhost:3001/pokemons')
       .then(resp => {
@@ -57,7 +54,7 @@ class App extends Component {
         <div className="container pt-5 mt-4 ">
           <div className="row justify-content-center m-2">
             <div  align="center" className="col">
-              <h5 className="h5">Criar  /  Editar</h5>
+              <h5 className="h5">Add  /  Edit</h5>
               {Limpa}
             </div>
             </div>

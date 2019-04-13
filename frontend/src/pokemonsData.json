@@ -1,0 +1,1128 @@
+{
+    "pokemons": [
+      {
+        "id": 1,
+        "nome": "bulbasaur",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+        "evoChain": "1",
+        "tipo0": "poison",
+        "tipo1": "grass"
+      },
+      {
+        "id": 2,
+        "nome": "ivysaur",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+        "evoChain": "1",
+        "tipo0": "poison",
+        "tipo1": "grass"
+      },
+      {
+        "id": 3,
+        "nome": "venusaur",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+        "evoChain": "1",
+        "tipo0": "poison",
+        "tipo1": "grass"
+      },
+      {
+        "id": 4,
+        "nome": "charmander",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+        "evoChain": "2",
+        "tipo0": "fire"
+      },
+      {
+        "id": 5,
+        "nome": "charmeleon",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+        "evoChain": "2",
+        "tipo0": "fire"
+      },
+      {
+        "id": 6,
+        "nome": "charizard",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+        "evoChain": "2",
+        "tipo0": "flying",
+        "tipo1": "fire"
+      },
+      {
+        "id": 7,
+        "nome": "squirtle",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+        "evoChain": "3",
+        "tipo0": "water"
+      },
+      {
+        "id": 8,
+        "nome": "wartortle",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+        "evoChain": "3",
+        "tipo0": "water"
+      },
+      {
+        "id": 9,
+        "nome": "blastoise",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+        "evoChain": "3",
+        "tipo0": "water"
+      },
+      {
+        "id": 10,
+        "nome": "caterpie",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+        "evoChain": "4",
+        "tipo0": "bug"
+      },
+      {
+        "id": 11,
+        "nome": "metapod",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+        "evoChain": "4",
+        "tipo0": "bug"
+      },
+      {
+        "id": 12,
+        "nome": "butterfree",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+        "evoChain": "4",
+        "tipo0": "flying",
+        "tipo1": "bug"
+      },
+      {
+        "id": 13,
+        "nome": "weedle",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+        "evoChain": "5",
+        "tipo0": "poison",
+        "tipo1": "bug"
+      },
+      {
+        "id": 14,
+        "nome": "kakuna",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+        "evoChain": "5",
+        "tipo0": "poison",
+        "tipo1": "bug"
+      },
+      {
+        "id": 15,
+        "nome": "beedrill",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+        "evoChain": "5",
+        "tipo0": "poison",
+        "tipo1": "bug"
+      },
+      {
+        "id": 16,
+        "nome": "pidgey",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+        "evoChain": "6",
+        "tipo0": "flying",
+        "tipo1": "normal"
+      },
+      {
+        "id": 17,
+        "nome": "pidgeotto",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
+        "evoChain": "6",
+        "tipo0": "flying",
+        "tipo1": "normal"
+      },
+      {
+        "id": 18,
+        "nome": "pidgeot",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+        "evoChain": "6",
+        "tipo0": "flying",
+        "tipo1": "normal"
+      },
+      {
+        "id": 19,
+        "nome": "rattata",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+        "evoChain": "7",
+        "tipo0": "normal"
+      },
+      {
+        "id": 20,
+        "nome": "raticate",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+        "evoChain": "7",
+        "tipo0": "normal"
+      },
+      {
+        "id": 21,
+        "nome": "spearow",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
+        "evoChain": "8",
+        "tipo0": "flying",
+        "tipo1": "normal"
+      },
+      {
+        "id": 22,
+        "nome": "fearow",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
+        "evoChain": "8",
+        "tipo0": "flying",
+        "tipo1": "normal"
+      },
+      {
+        "id": 23,
+        "nome": "ekans",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
+        "evoChain": "9",
+        "tipo0": "poison"
+      },
+      {
+        "id": 24,
+        "nome": "arbok",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
+        "evoChain": "9",
+        "tipo0": "poison"
+      },
+      {
+        "id": 25,
+        "nome": "pikachu",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+        "evoChain": "10",
+        "tipo0": "electric"
+      },
+      {
+        "id": 26,
+        "nome": "raichu",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
+        "evoChain": "10",
+        "tipo0": "electric"
+      },
+      {
+        "id": 27,
+        "nome": "sandshrew",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
+        "evoChain": "11",
+        "tipo0": "ground"
+      },
+      {
+        "id": 28,
+        "nome": "sandslash",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
+        "evoChain": "11",
+        "tipo0": "ground"
+      },
+      {
+        "id": 29,
+        "nome": "nidoran-f",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
+        "evoChain": "12",
+        "tipo0": "poison"
+      },
+      {
+        "id": 30,
+        "nome": "nidorina",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
+        "evoChain": "12",
+        "tipo0": "poison"
+      },
+      {
+        "id": 31,
+        "nome": "nidoqueen",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
+        "evoChain": "12",
+        "tipo0": "ground",
+        "tipo1": "poison"
+      },
+      {
+        "id": 32,
+        "nome": "nidoran-m",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
+        "evoChain": "13",
+        "tipo0": "poison"
+      },
+      {
+        "id": 33,
+        "nome": "nidorino",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
+        "evoChain": "13",
+        "tipo0": "poison"
+      },
+      {
+        "id": 34,
+        "nome": "nidoking",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
+        "evoChain": "13",
+        "tipo0": "ground",
+        "tipo1": "poison"
+      },
+      {
+        "id": 35,
+        "nome": "clefairy",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
+        "evoChain": "14",
+        "tipo0": "fairy"
+      },
+      {
+        "id": 36,
+        "nome": "clefable",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
+        "evoChain": "14",
+        "tipo0": "fairy"
+      },
+      {
+        "id": 37,
+        "nome": "vulpix",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+        "evoChain": "15",
+        "tipo0": "fire"
+      },
+      {
+        "id": 38,
+        "nome": "ninetales",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+        "evoChain": "15",
+        "tipo0": "fire"
+      },
+      {
+        "id": 39,
+        "nome": "jigglypuff",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
+        "evoChain": "16",
+        "tipo0": "fairy",
+        "tipo1": "normal"
+      },
+      {
+        "id": 40,
+        "nome": "wigglytuff",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
+        "evoChain": "16",
+        "tipo0": "fairy",
+        "tipo1": "normal"
+      },
+      {
+        "id": 41,
+        "nome": "zubat",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
+        "evoChain": "17",
+        "tipo0": "flying",
+        "tipo1": "poison"
+      },
+      {
+        "id": 42,
+        "nome": "golbat",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png",
+        "evoChain": "17",
+        "tipo0": "flying",
+        "tipo1": "poison"
+      },
+      {
+        "id": 43,
+        "nome": "oddish",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
+        "evoChain": "18",
+        "tipo0": "poison",
+        "tipo1": "grass"
+      },
+      {
+        "id": 44,
+        "nome": "gloom",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
+        "evoChain": "18",
+        "tipo0": "poison",
+        "tipo1": "grass"
+      },
+      {
+        "id": 45,
+        "nome": "vileplume",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
+        "evoChain": "18",
+        "tipo0": "poison",
+        "tipo1": "grass"
+      },
+      {
+        "id": 46,
+        "nome": "paras",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
+        "evoChain": "19",
+        "tipo0": "grass",
+        "tipo1": "bug"
+      },
+      {
+        "id": 47,
+        "nome": "parasect",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
+        "evoChain": "19",
+        "tipo0": "grass",
+        "tipo1": "bug"
+      },
+      {
+        "id": 48,
+        "nome": "venonat",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
+        "evoChain": "20",
+        "tipo0": "poison",
+        "tipo1": "bug"
+      },
+      {
+        "id": 49,
+        "nome": "venomoth",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
+        "evoChain": "20",
+        "tipo0": "poison",
+        "tipo1": "bug"
+      },
+      {
+        "id": 50,
+        "nome": "diglett",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
+        "evoChain": "21",
+        "tipo0": "ground"
+      },
+      {
+        "id": 51,
+        "nome": "dugtrio",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
+        "evoChain": "21",
+        "tipo0": "ground"
+      },
+      {
+        "id": 52,
+        "nome": "meowth",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
+        "evoChain": "22",
+        "tipo0": "normal"
+      },
+      {
+        "id": 53,
+        "nome": "persian",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
+        "evoChain": "22",
+        "tipo0": "normal"
+      },
+      {
+        "id": 54,
+        "nome": "psyduck",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+        "evoChain": "23",
+        "tipo0": "water"
+      },
+      {
+        "id": 55,
+        "nome": "golduck",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
+        "evoChain": "23",
+        "tipo0": "water"
+      },
+      {
+        "id": 56,
+        "nome": "mankey",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
+        "evoChain": "24",
+        "tipo0": "fighting"
+      },
+      {
+        "id": 57,
+        "nome": "primeape",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
+        "evoChain": "24",
+        "tipo0": "fighting"
+      },
+      {
+        "id": 58,
+        "nome": "growlithe",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
+        "evoChain": "25",
+        "tipo0": "fire"
+      },
+      {
+        "id": 59,
+        "nome": "arcanine",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+        "evoChain": "25",
+        "tipo0": "fire"
+      },
+      {
+        "id": 60,
+        "nome": "poliwag",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+        "evoChain": "26",
+        "tipo0": "water"
+      },
+      {
+        "id": 61,
+        "nome": "poliwhirl",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
+        "evoChain": "26",
+        "tipo0": "water"
+      },
+      {
+        "id": 62,
+        "nome": "poliwrath",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
+        "evoChain": "26",
+        "tipo0": "fighting",
+        "tipo1": "water"
+      },
+      {
+        "id": 63,
+        "nome": "abra",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
+        "evoChain": "27",
+        "tipo0": "psychic"
+      },
+      {
+        "id": 64,
+        "nome": "kadabra",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
+        "evoChain": "27",
+        "tipo0": "psychic"
+      },
+      {
+        "id": 65,
+        "nome": "alakazam",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
+        "evoChain": "27",
+        "tipo0": "psychic"
+      },
+      {
+        "id": 66,
+        "nome": "machop",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
+        "evoChain": "28",
+        "tipo0": "fighting"
+      },
+      {
+        "id": 67,
+        "nome": "machoke",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
+        "evoChain": "28",
+        "tipo0": "fighting"
+      },
+      {
+        "id": 68,
+        "nome": "machamp",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
+        "evoChain": "28",
+        "tipo0": "fighting"
+      },
+      {
+        "id": 69,
+        "nome": "bellsprout",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
+        "evoChain": "29",
+        "tipo0": "poison",
+        "tipo1": "grass"
+      },
+      {
+        "id": 70,
+        "nome": "weepinbell",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
+        "evoChain": "29",
+        "tipo0": "poison",
+        "tipo1": "grass"
+      },
+      {
+        "id": 71,
+        "nome": "victreebel",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
+        "evoChain": "29",
+        "tipo0": "poison",
+        "tipo1": "grass"
+      },
+      {
+        "id": 72,
+        "nome": "tentacool",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
+        "evoChain": "30",
+        "tipo0": "poison",
+        "tipo1": "water"
+      },
+      {
+        "id": 73,
+        "nome": "tentacruel",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
+        "evoChain": "30",
+        "tipo0": "poison",
+        "tipo1": "water"
+      },
+      {
+        "id": 74,
+        "nome": "geodude",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
+        "evoChain": "31",
+        "tipo0": "ground",
+        "tipo1": "rock"
+      },
+      {
+        "id": 75,
+        "nome": "graveler",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
+        "evoChain": "31",
+        "tipo0": "ground",
+        "tipo1": "rock"
+      },
+      {
+        "id": 76,
+        "nome": "golem",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
+        "evoChain": "31",
+        "tipo0": "ground",
+        "tipo1": "rock"
+      },
+      {
+        "id": 77,
+        "nome": "ponyta",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
+        "evoChain": "32",
+        "tipo0": "fire"
+      },
+      {
+        "id": 78,
+        "nome": "rapidash",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
+        "evoChain": "32",
+        "tipo0": "fire"
+      },
+      {
+        "id": 79,
+        "nome": "slowpoke",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
+        "evoChain": "33",
+        "tipo0": "psychic",
+        "tipo1": "water"
+      },
+      {
+        "id": 80,
+        "nome": "slowbro",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
+        "evoChain": "33",
+        "tipo0": "psychic",
+        "tipo1": "water"
+      },
+      {
+        "id": 81,
+        "nome": "magnemite",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
+        "evoChain": "34",
+        "tipo0": "steel",
+        "tipo1": "electric"
+      },
+      {
+        "id": 82,
+        "nome": "magneton",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
+        "evoChain": "34",
+        "tipo0": "steel",
+        "tipo1": "electric"
+      },
+      {
+        "id": 83,
+        "nome": "farfetchd",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
+        "evoChain": "35",
+        "tipo0": "flying",
+        "tipo1": "normal"
+      },
+      {
+        "id": 84,
+        "nome": "doduo",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
+        "evoChain": "36",
+        "tipo0": "flying",
+        "tipo1": "normal"
+      },
+      {
+        "id": 85,
+        "nome": "dodrio",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
+        "evoChain": "36",
+        "tipo0": "flying",
+        "tipo1": "normal"
+      },
+      {
+        "id": 86,
+        "nome": "seel",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
+        "evoChain": "37",
+        "tipo0": "water"
+      },
+      {
+        "id": 87,
+        "nome": "dewgong",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+        "evoChain": "37",
+        "tipo0": "ice",
+        "tipo1": "water"
+      },
+      {
+        "id": 88,
+        "nome": "grimer",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
+        "evoChain": "38",
+        "tipo0": "poison"
+      },
+      {
+        "id": 89,
+        "nome": "muk",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
+        "evoChain": "38",
+        "tipo0": "poison"
+      },
+      {
+        "id": 90,
+        "nome": "shellder",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
+        "evoChain": "39",
+        "tipo0": "water"
+      },
+      {
+        "id": 91,
+        "nome": "cloyster",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+        "evoChain": "39",
+        "tipo0": "ice",
+        "tipo1": "water"
+      },
+      {
+        "id": 92,
+        "nome": "gastly",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
+        "evoChain": "40",
+        "tipo0": "poison",
+        "tipo1": "ghost"
+      },
+      {
+        "id": 93,
+        "nome": "haunter",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+        "evoChain": "40",
+        "tipo0": "poison",
+        "tipo1": "ghost"
+      },
+      {
+        "id": 94,
+        "nome": "gengar",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+        "evoChain": "40",
+        "tipo0": "poison",
+        "tipo1": "ghost"
+      },
+      {
+        "id": 95,
+        "nome": "onix",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
+        "evoChain": "41",
+        "tipo0": "ground",
+        "tipo1": "rock"
+      },
+      {
+        "id": 96,
+        "nome": "drowzee",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
+        "evoChain": "42",
+        "tipo0": "psychic"
+      },
+      {
+        "id": 97,
+        "nome": "hypno",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
+        "evoChain": "42",
+        "tipo0": "psychic"
+      },
+      {
+        "id": 98,
+        "nome": "krabby",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+        "evoChain": "43",
+        "tipo0": "water"
+      },
+      {
+        "id": 99,
+        "nome": "kingler",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
+        "evoChain": "43",
+        "tipo0": "water"
+      },
+      {
+        "id": 100,
+        "nome": "voltorb",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
+        "evoChain": "44",
+        "tipo0": "electric"
+      },
+      {
+        "id": 101,
+        "nome": "electrode",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
+        "evoChain": "44",
+        "tipo0": "electric"
+      },
+      {
+        "id": 102,
+        "nome": "exeggcute",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
+        "evoChain": "45",
+        "tipo0": "psychic",
+        "tipo1": "grass"
+      },
+      {
+        "id": 103,
+        "nome": "exeggutor",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
+        "evoChain": "45",
+        "tipo0": "psychic",
+        "tipo1": "grass"
+      },
+      {
+        "id": 104,
+        "nome": "cubone",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
+        "evoChain": "46",
+        "tipo0": "ground"
+      },
+      {
+        "id": 105,
+        "nome": "marowak",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
+        "evoChain": "46",
+        "tipo0": "ground"
+      },
+      {
+        "id": 106,
+        "nome": "hitmonlee",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
+        "evoChain": "47",
+        "tipo0": "fighting"
+      },
+      {
+        "id": 107,
+        "nome": "hitmonchan",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
+        "evoChain": "47",
+        "tipo0": "fighting"
+      },
+      {
+        "id": 108,
+        "nome": "lickitung",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
+        "evoChain": "48",
+        "tipo0": "normal"
+      },
+      {
+        "id": 109,
+        "nome": "koffing",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
+        "evoChain": "49",
+        "tipo0": "poison"
+      },
+      {
+        "id": 110,
+        "nome": "weezing",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
+        "evoChain": "49",
+        "tipo0": "poison"
+      },
+      {
+        "id": 111,
+        "nome": "rhyhorn",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
+        "evoChain": "50",
+        "tipo0": "rock",
+        "tipo1": "ground"
+      },
+      {
+        "id": 112,
+        "nome": "rhydon",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
+        "evoChain": "50",
+        "tipo0": "rock",
+        "tipo1": "ground"
+      },
+      {
+        "id": 113,
+        "nome": "chansey",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
+        "evoChain": "51",
+        "tipo0": "normal"
+      },
+      {
+        "id": 114,
+        "nome": "tangela",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
+        "evoChain": "52",
+        "tipo0": "grass"
+      },
+      {
+        "id": 115,
+        "nome": "kangaskhan",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
+        "evoChain": "53",
+        "tipo0": "normal"
+      },
+      {
+        "id": 116,
+        "nome": "horsea",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+        "evoChain": "54",
+        "tipo0": "water"
+      },
+      {
+        "id": 117,
+        "nome": "seadra",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
+        "evoChain": "54",
+        "tipo0": "water"
+      },
+      {
+        "id": 118,
+        "nome": "goldeen",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
+        "evoChain": "55",
+        "tipo0": "water"
+      },
+      {
+        "id": 119,
+        "nome": "seaking",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
+        "evoChain": "55",
+        "tipo0": "water"
+      },
+      {
+        "id": 120,
+        "nome": "staryu",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
+        "evoChain": "56",
+        "tipo0": "water"
+      },
+      {
+        "id": 121,
+        "nome": "starmie",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
+        "evoChain": "56",
+        "tipo0": "psychic",
+        "tipo1": "water"
+      },
+      {
+        "id": 122,
+        "nome": "mr-mime",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
+        "evoChain": "57",
+        "tipo0": "fairy",
+        "tipo1": "psychic"
+      },
+      {
+        "id": 123,
+        "nome": "scyther",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
+        "evoChain": "58",
+        "tipo0": "flying",
+        "tipo1": "bug"
+      },
+      {
+        "id": 124,
+        "nome": "jynx",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+        "evoChain": "59",
+        "tipo0": "psychic",
+        "tipo1": "ice"
+      },
+      {
+        "id": 125,
+        "nome": "electabuzz",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
+        "evoChain": "60",
+        "tipo0": "electric"
+      },
+      {
+        "id": 126,
+        "nome": "magmar",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
+        "evoChain": "61",
+        "tipo0": "fire"
+      },
+      {
+        "id": 127,
+        "nome": "pinsir",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
+        "evoChain": "62",
+        "tipo0": "bug"
+      },
+      {
+        "id": 128,
+        "nome": "tauros",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
+        "evoChain": "63",
+        "tipo0": "normal"
+      },
+      {
+        "id": 129,
+        "nome": "magikarp",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
+        "evoChain": "64",
+        "tipo0": "water"
+      },
+      {
+        "id": 130,
+        "nome": "gyarados",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
+        "evoChain": "64",
+        "tipo0": "flying",
+        "tipo1": "water"
+      },
+      {
+        "id": 131,
+        "nome": "lapras",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+        "evoChain": "65",
+        "tipo0": "ice",
+        "tipo1": "water"
+      },
+      {
+        "id": 132,
+        "nome": "ditto",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+        "evoChain": "66",
+        "tipo0": "normal"
+      },
+      {
+        "id": 133,
+        "nome": "eevee",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+        "evoChain": "67",
+        "tipo0": "normal"
+      },
+      {
+        "id": 134,
+        "nome": "vaporeon",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+        "evoChain": "67",
+        "tipo0": "water"
+      },
+      {
+        "id": 135,
+        "nome": "jolteon",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
+        "evoChain": "67",
+        "tipo0": "electric"
+      },
+      {
+        "id": 136,
+        "nome": "flareon",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+        "evoChain": "67",
+        "tipo0": "fire"
+      },
+      {
+        "id": 137,
+        "nome": "porygon",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
+        "evoChain": "68",
+        "tipo0": "normal"
+      },
+      {
+        "id": 138,
+        "nome": "omanyte",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
+        "evoChain": "69",
+        "tipo0": "water",
+        "tipo1": "rock"
+      },
+      {
+        "id": 139,
+        "nome": "omastar",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
+        "evoChain": "69",
+        "tipo0": "water",
+        "tipo1": "rock"
+      },
+      {
+        "id": 140,
+        "nome": "kabuto",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png",
+        "evoChain": "70",
+        "tipo0": "water",
+        "tipo1": "rock"
+      },
+      {
+        "id": 141,
+        "nome": "kabutops",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
+        "evoChain": "70",
+        "tipo0": "water",
+        "tipo1": "rock"
+      },
+      {
+        "id": 142,
+        "nome": "aerodactyl",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
+        "evoChain": "71",
+        "tipo0": "flying",
+        "tipo1": "rock"
+      },
+      {
+        "id": 143,
+        "nome": "snorlax",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
+        "evoChain": "72",
+        "tipo0": "normal"
+      },
+      {
+        "id": 144,
+        "nome": "articuno",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+        "evoChain": "73",
+        "tipo0": "flying",
+        "tipo1": "ice"
+      },
+      {
+        "id": 145,
+        "nome": "zapdos",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+        "evoChain": "74",
+        "tipo0": "flying",
+        "tipo1": "electric"
+      },
+      {
+        "id": 146,
+        "nome": "moltres",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+        "evoChain": "75",
+        "tipo0": "flying",
+        "tipo1": "fire"
+      },
+      {
+        "id": 147,
+        "nome": "dratini",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
+        "evoChain": "76",
+        "tipo0": "dragon"
+      },
+      {
+        "id": 148,
+        "nome": "dragonair",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
+        "evoChain": "76",
+        "tipo0": "dragon"
+      },
+      {
+        "id": 149,
+        "nome": "dragonite",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+        "evoChain": "76",
+        "tipo0": "flying",
+        "tipo1": "dragon"
+      },
+      {
+        "id": 150,
+        "nome": "mewtwo",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+        "evoChain": "77",
+        "tipo0": "psychic"
+      },
+      {
+        "id": 151,
+        "nome": "mew",
+        "imagem": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+        "evoChain": "78",
+        "tipo0": "psychic"
+      }
+    ]
+}

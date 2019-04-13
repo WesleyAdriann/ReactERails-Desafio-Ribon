@@ -2,16 +2,15 @@ import React from 'react';
 
 const Pokemon = props => {
     return (
-        <div className="col-md-3 pl-2 pr-2 border rounded">
+        <div className="col-sm-3 m-1 p-1 border rounded" key={props.id}>
             <div className="media">
-                <img className="mr-3" src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png"/>
+                <img className="mr-3" src={props.imagem} alt={props.nome}/>
                 <div className="media-body">
-                    <h5 class="mt-0">Nome</h5>
-                    PokeID:<br/>
-                    Tipo(s):
+                    <h5 className="mt-0">{props.nome}</h5>
+                    PokeID: {props.id}<br/>
+                    <h6>{props.tipo1} - {props.tipo0}</h6>
                 </div>
-                
-                <h6 class="ml-1">x</h6>
+                <span className="badge pt-0 pr-1 badge-danger" style={{verticalAlign: 'text-top'}}>×</span>                   
             </div>
             
             

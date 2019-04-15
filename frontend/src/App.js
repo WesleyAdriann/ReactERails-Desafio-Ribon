@@ -4,6 +4,7 @@ import axios from 'axios';
 import Navbar from './components/Navbar';
 import Pokemon from './components/Pokemon';
 import FormAdd from './components/FormAdd';
+import FormEdit from './components/FormEdit';
 
 class App extends Component {
   constructor() {
@@ -66,7 +67,7 @@ class App extends Component {
               <FormAdd addPokemon={this.addPokemon}/>
               </div>
               <div className="collapse" id="editForm">
-              Edit
+              <FormEdit/>
               </div>
               {Limpa}
             </div>

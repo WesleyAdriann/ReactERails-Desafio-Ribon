@@ -8,7 +8,7 @@ const Pokemon = props => {
     }
     return (
         <div className="col-sm-3 m-1 p-1 border rounded" key={props.id}>
-            <div className="media" >
+            <div className="media">
                 <img 
                     className="mr-3"
                     src={props.imagem}
@@ -23,7 +23,7 @@ const Pokemon = props => {
                         {tipo1}
                     </h6>
                 </div>
-                <span className="badge pt-0 pr-1 badge-danger" style={{verticalAlign: 'text-top'}}>×</span>                   
+                <span className="badge pt-0 pr-1 badge-danger">&times;</span>                   
             </div>
             
             

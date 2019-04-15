@@ -7,9 +7,9 @@ const Navbar = props => {
                 <input
                     value={props.search}
                     onChange={e => {props.handleChange(e)}}
-                    className="form-control"
+                    className="form-control text-capitalize"
                     name="search"
-                    placeholder="Search"
+                    placeholder="Buscar"
                     type="search"/>
             </div>
         </nav>

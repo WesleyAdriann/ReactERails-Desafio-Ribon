@@ -12,7 +12,6 @@ class App extends Component {
       search: '',
       pokemons : [],
       evoChain : '',
-      addPoke : {}
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleChain = this.handleChain.bind(this);
@@ -22,6 +21,7 @@ class App extends Component {
   componentDidMount() {
     axios.get('http://localhost:3001/pokemons')
       .then(resp => {
+        console.log(resp);
         this.setState({
           pokemons : resp.data,
         })
@@ -29,8 +29,9 @@ class App extends Component {
   }
   
   handleChange(e) {
+    const {value, name} = e.target;
     this.setState({
-      [e.target.name] : e.target.value
+      [name] : value
     })
   }
 
@@ -44,7 +45,7 @@ class App extends Component {
       search : ''
     })
   }
-  
+
   render() {
     let count = 0;
     let Limpa = ''
@@ -58,18 +59,18 @@ class App extends Component {
           <div className="row justify-content-center m-2">
             <div  align="center" className="col">
               <h5 className="h5">
-                <a data-toggle="collapse" href="#addForm">Add</a>&nbsp;&nbsp;
-                <a data-toggle="collapse" href="#editForm">Edit</a>
+                <a data-toggle="collapse" href="#addForm">Adicionar</a>&nbsp;/&nbsp;
+                <a data-toggle="collapse" href="#editForm">Editar</a>
               </h5>
               <div className="collapse" id="addForm">
-              <FormAdd/>
+              <FormAdd addPokemon={this.addPokemon}/>
               </div>
               <div className="collapse" id="editForm">
               Edit
               </div>
               {Limpa}
             </div>
-            </div>
+          </div>
           <div className="row justify-content-center">
             
             {this.state.pokemons.map(poke => {

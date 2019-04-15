@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import axios from 'axios'
 
 import Select from './Select'
 
@@ -12,39 +13,82 @@ class FormAdd extends Component {
             tipo0: '',
             tipo1: '',
         };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    handleChange(e) {
+        const {value, name} = e.target;
+        this.setState({
+          [name] : value
+        })
+    }
+
+    handleSubmit(e) {
+        e.preventDefault();
+        if(this.state.nome === '') {
+            alert("Insira um nome");
+        } else if (this.state.evochain === '') {
+            alert("Insira uma ID de evolução");
+        } else if (this.state.imagem === '') {
+            alert("Insira um URL de imagem");
+        } else if (this.state.tipo0 === '' && this.state.tipo1 === '') {
+            alert("Seleciona pelo menos 1 tipo")
+        } else {
+            
+            axios({
+                method: 'post',
+                url: 'http://localhost:3001/pokemons',
+                data : {
+                    "nome" : this.state.nome,
+                    "imagem" : this.state.imagem,
+                    "evochain" : parseInt(this.state.evochain),
+                    "tipo0" : this.state.tipo0,
+                    "tipo1" : this.state.tipo1
+                }
+            }).then (response => {
+                if(response.status === 201) {
+                    alert("Adicionado");
+                } else {
+                    alert("Não foi possivel adicionar");
+                }
+            })
+            
+        }
+    }
 
     render () {
         return (
             <div className="col">
-                <form>
+                <form onSubmit={this.handleSubmit}>
                     <div className="form-group row">
-                        <label className="col-sm-2 col-form-label">Name</label>
+                        <label className="col-sm-2 col-form-label">Nome</label>
                         <div className="col">
-                            <input type="text" className="form-control"/>
+                            <input name="nome" type="text" className="form-control" onChange={e => this.handleChange(e)}/>
                         </div>
-                        <label className="col-sm-2 col-form-label">ID Evolution</label>
+                        <label className="col-sm-2 col-form-label">ID Evolução</label>
                         <div className="col">
-                            <input type="text" className="form-control"/>
+                            <input name="evochain" type="number" min="0" className="form-control" onChange={e => this.handleChange(e)}/>
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label className="col-sm-2 col-form-label">Pic URL</label>
+                        <label className="col-sm-2 col-form-label">Imagem URL</label>
                         <div className="col">
-                            <input type="text" className="form-control"/>
+                            <input name="imagem" type="text" className="form-control" onChange={e => this.handleChange(e)}/>
                         </div>
                     </div>
                     <div className="form-group row">
-                        <label className="col-sm-2 col-form-label">Type</label>
+                        <label className="col-sm-2 col-form-label">Tipo</label>
                         <div className="col">
-                            <Select/>
+                            <Select name={'tipo0'} handleChange={this.handleChange}/>
                         </div>
                         <div className="col">
-                            <Select/>
+                            <Select name={'tipo1'} handleChange={this.handleChange}/>
                         </div>
                     </div>
-                    <button class="btn btn-primary" type="submit">Submit</button>
+                    
+                        <button type="submit" className="btn btn-primary">Salvar</button> 
+                    
                 </form>
             </div>
 

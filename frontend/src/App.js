@@ -3,14 +3,16 @@ import axios from 'axios';
 
 import Navbar from './components/Navbar';
 import Pokemon from './components/Pokemon';
+import FormAdd from './components/FormAdd';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.state = {
       search: '',
       pokemons : [],
       evoChain : '',
+      addPoke : {}
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleChain = this.handleChain.bind(this);
@@ -38,7 +40,8 @@ class App extends Component {
 
   clearFilters() {
     this.setState({
-      evoChain : ''
+      evoChain : '',
+      search : ''
     })
   }
   
@@ -50,7 +53,7 @@ class App extends Component {
     }
     return (
       <div>
-        <Navbar handleChange={this.handleChange}/>
+        <Navbar handleChange={this.handleChange} search={this.state.search}/>
         <div className="container pt-5 mt-4 ">
           <div className="row justify-content-center m-2">
             <div  align="center" className="col">
@@ -59,7 +62,7 @@ class App extends Component {
                 <a data-toggle="collapse" href="#editForm">Edit</a>
               </h5>
               <div className="collapse" id="addForm">
-              aDD
+              <FormAdd/>
               </div>
               <div className="collapse" id="editForm">
               Edit

@@ -3,7 +3,7 @@ import '../css/pokemon.min.css'
 
 const Pokemon = props => {
     let tipo1;
-    if (props.tipo1 != '') {
+    if (props.tipo1 !== '') {
         tipo1 = <span className={`badge badge-${props.tipo1} text-capitalize`}>{props.tipo1}</span>
     }
     return (

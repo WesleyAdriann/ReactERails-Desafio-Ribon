@@ -55,7 +55,7 @@ class App extends Component {
           <div className="row justify-content-center m-2">
             <div  align="center" className="col">
               <h5 className="h5">
-                <a data-toggle="collapse" href="#addForm">Add</a> 
+                <a data-toggle="collapse" href="#addForm">Add</a>&nbsp;&nbsp;
                 <a data-toggle="collapse" href="#editForm">Edit</a>
               </h5>
               <div className="collapse" id="addForm">

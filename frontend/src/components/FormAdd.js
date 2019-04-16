@@ -87,8 +87,8 @@ class FormAdd extends Component {
                         </div>
                     </div>
                     
-                        <button type="submit" className="btn btn-primary mb-2">Salvar</button> 
-                    
+                        <button type="submit" className="btn btn-primary mb-2">Salvar</button> &nbsp;
+                        <button type="reset" className="btn btn-primary mb-2">Limpar</button> 
                 </form>
             </div>
 

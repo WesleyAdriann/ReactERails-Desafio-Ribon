@@ -113,8 +113,8 @@ class FormEdit extends Component {
                         </div>
                     </div>
                     
-                        <button type="submit" className="btn btn-primary">Salvar</button> 
-                    
+                        <button type="submit" className="btn btn-primary">Salvar</button> &nbsp;
+                        <button type="reset" className="btn btn-primary">Limpar</button> 
                 </form>
             </div>
         )

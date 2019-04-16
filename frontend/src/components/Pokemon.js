@@ -23,7 +23,7 @@ const Pokemon = props => {
                         {tipo1}
                     </h6>
                 </div>
-                <span className="badge pt-0 pr-1 badge-danger">&times;</span>                   
+                <span className="badge pt-0 pr-1 badge-danger" id={props.id} onClick={e => props.handleDelete(e)}>&times;</span>                   
             </div>
             
             

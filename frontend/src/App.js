@@ -49,7 +49,14 @@ class App extends Component {
   }
 
   handleDelete(e) {
-
+    let { id } = e.target;
+    console.log(id);
+    axios.delete(`http://localhost:3001/pokemons/${id}`)
+      .then(response => {
+        if(response.status === 204) {
+          alert("Deletado com sucesso");
+        }
+      })
   }
 
   render() {

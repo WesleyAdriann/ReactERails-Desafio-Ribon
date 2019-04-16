@@ -16,8 +16,8 @@ const Pokemon = props => {
                     <h5 className="mt-0 text-capitalize">{props.nome}</h5>
                     PokeID: {props.id}<br/>
                     <h6>   
-                        <span className={`badge badge-${props.tipo0} text-capitalize`}>{props.tipo0}</span> &nbsp;
-                        <span className={`badge badge-${props.tipo1} text-capitalize`}>{props.tipo1}</span>
+                        <span className={`badge badge-${props.tipo1} text-capitalize`}>{props.tipo1}</span>&nbsp;
+                        <span className={`badge badge-${props.tipo0} text-capitalize`}>{props.tipo0}</span> 
                     </h6>
                 </div>
                 <span className="badge pt-0 pr-1 badge-danger" id={props.id} onClick={e => props.handleDelete(e)}>&times;</span>

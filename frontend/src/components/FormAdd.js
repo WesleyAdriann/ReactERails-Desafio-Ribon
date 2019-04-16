@@ -80,14 +80,14 @@ class FormAdd extends Component {
                     <div className="form-group row">
                         <label className="col-sm-2 col-form-label">Tipo</label>
                         <div className="col">
-                            <Select name={'tipo0'} handleChange={this.handleChange}/>
+                            <Select name={'tipo0'} handleChange={this.handleChange} defaultValue={""}/>
                         </div>
                         <div className="col">
-                            <Select name={'tipo1'} handleChange={this.handleChange}/>
+                            <Select name={'tipo1'} handleChange={this.handleChange} defaultValue={""}/>
                         </div>
                     </div>
                     
-                        <button type="submit" className="btn btn-primary">Salvar</button> 
+                        <button type="submit" className="btn btn-primary mb-2">Salvar</button> 
                     
                 </form>
             </div>

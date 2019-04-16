@@ -2,8 +2,8 @@ import React from 'react'
 
 const Select = props => {
     return (
-        <select name={props.name} className="custom-select" onChange={e => props.handleChange(e)}>
-            <option defaultValue value="">Selecione</option>
+        <select name={props.name} className="custom-select" onChange={e => props.handleChange(e)}  value={props.defaultValue}>
+            <option value="">Selecione</option>
             <option value="bug">Bug</option>
             <option value="dragon">Dragon</option>
             <option value="eletric">Eletric</option>

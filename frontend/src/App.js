@@ -17,6 +17,7 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleChain = this.handleChain.bind(this);
     this.clearFilters = this.clearFilters.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
   componentDidMount() {
@@ -47,11 +48,15 @@ class App extends Component {
     })
   }
 
+  handleDelete(e) {
+
+  }
+
   render() {
     let count = 0;
     let Limpa = ''
     if(this.state.evoChain !== '') {
-      Limpa = (<button className="btn btn-primary" onClick={this.clearFilters}>Voltar</button>)
+      Limpa = (<button className="btn btn-primary mt-2" onClick={this.clearFilters}>Voltar</button>)
     }
     return (
       <div>
@@ -67,7 +72,7 @@ class App extends Component {
               <FormAdd addPokemon={this.addPokemon}/>
               </div>
               <div className="collapse" id="editForm">
-              <FormEdit/>
+              <FormEdit maxPoke={this.state.pokemons.length}/>
               </div>
               {Limpa}
             </div>
@@ -88,6 +93,7 @@ class App extends Component {
                         tipo0={poke.tipo0}
                         tipo1={poke.tipo1}
                         handleChain={this.handleChain}
+                        handleDelete={this.handleDelete}
                       />
                     )
                 } else {
@@ -114,6 +120,7 @@ class App extends Component {
                         tipo0={poke.tipo0}
                         tipo1={poke.tipo1}
                         handleChain={this.handleChain}
+                        handleDelete={this.handleDelete}
                       />
                     )
                 }

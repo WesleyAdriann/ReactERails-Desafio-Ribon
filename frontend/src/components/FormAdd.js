@@ -48,7 +48,8 @@ class FormAdd extends Component {
                 }
             }).then (response => {
                 if(response.status === 201) {
-                    alert("Adicionado");
+                    alert("Adicionado com sucesso");
+                    window.location.reload();
                 } else {
                     alert("Não foi possivel adicionar");
                 }
@@ -80,10 +81,10 @@ class FormAdd extends Component {
                     <div className="form-group row">
                         <label className="col-sm-2 col-form-label">Tipo</label>
                         <div className="col">
-                            <Select name={'tipo0'} handleChange={this.handleChange} defaultValue={""}/>
+                            <Select name={'tipo0'} handleChange={this.handleChange} defaultValue={this.state.tipo0}/>
                         </div>
                         <div className="col">
-                            <Select name={'tipo1'} handleChange={this.handleChange} defaultValue={""}/>
+                            <Select name={'tipo1'} handleChange={this.handleChange} defaultValue={this.state.tipo1}/>
                         </div>
                     </div>
                     

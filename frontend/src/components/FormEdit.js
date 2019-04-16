@@ -61,6 +61,10 @@ class FormEdit extends Component {
         }).then(response => {
             if(response.status === 200) {
                 alert("Atualizado com sucesso");
+                window.location.reload();
+                
+            } else {
+                alert("Não foi possivel Editar");
             }
         })
     }

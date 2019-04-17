@@ -14,15 +14,15 @@ const Pokemon = props => {
                 />
                 <div className="media-body" data-target="#modal" data-toggle="modal" onClick={() => {props.handleChain(props.evochain)}}>
                     <h5 className="mt-0 text-capitalize">{props.nome}</h5>
-                    PokeID: {props.id}<br/>
+                    Id: {props.id}<br/>
                     <h6>   
                         <span className={`badge badge-${props.tipo1} text-capitalize`}>{props.tipo1}</span>&nbsp;
                         <span className={`badge badge-${props.tipo0} text-capitalize`}>{props.tipo0}</span> 
                     </h6>
                 </div>
-                <span className="badge pt-0 pr-1 badge-danger" id={props.id} onClick={e => props.handleDelete(e)}>&times;</span>
-                
-            </div>
+                    <span className="badge badge-pill badge-danger pt-0 pr-1 pl-1" id={props.id} onClick={e => props.handleDelete(e)}>&times;</span> 
+                    
+           </div>
             
             
 

@@ -24,7 +24,6 @@ class App extends Component {
   componentDidMount() {
     axios.get('http://localhost:3001/pokemons')
       .then(resp => {
-        console.log(resp);
         this.setState({
           pokemons : resp.data,
         })
@@ -74,7 +73,7 @@ class App extends Component {
                 <a data-toggle="collapse" style={{textDecoration: 'none'}} href="#editForm">Editar</a>
               </h5>
               <div className="collapse" id="addForm">
-              <FormAdd addPokemon={this.addPokemon}/>
+              <FormAdd addPokemon={this.addPokemon} pokemons={this.state.pokemons}/>
               </div>
               <div className="collapse" id="editForm">
               <FormEdit maxPoke={this.state.pokemons.length} pokemons={this.state.pokemons}/>
@@ -88,7 +87,7 @@ class App extends Component {
               if((this.state.search === '') ||
                 (poke.nome.includes(this.state.search.toLocaleLowerCase()))) {
                   return(
-                    <Pokemon
+                    <Pokemon key={poke.id}
                       id={poke.id}
                       nome={poke.nome}
                       imagem={poke.imagem}

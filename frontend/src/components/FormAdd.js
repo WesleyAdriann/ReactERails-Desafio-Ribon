@@ -67,7 +67,7 @@ class FormAdd extends Component {
                         <div className="col">
                             <input name="nome" type="text" className="form-control" onChange={e => this.handleChange(e)}/>
                         </div>
-                        <label className="col-sm-2 col-form-label">ID Evolução</label>
+                        <label className="col-sm-2 col-form-label">Id Evolução</label>
                         <div className="col">
                             <input name="evochain" type="number" min="0" className="form-control" onChange={e => this.handleChange(e)}/>
                         </div>

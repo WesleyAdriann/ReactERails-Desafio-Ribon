@@ -73,7 +73,7 @@ class FormEdit extends Component {
             <div className="col">
                 <form onSubmit={this.getPokemon}>
                   <div className="form-group row mt-">
-                        <label className="col-sm-2 col-form-label">PokeID</label>
+                        <label className="col-sm-2 col-form-label">Id</label>
                             <div className="col">
                                 {/* <input
                                     name="id"
@@ -87,7 +87,7 @@ class FormEdit extends Component {
                                 <select name="id" className="custom-select" onChange={e => this.handleChange(e)}>
                                     {this.props.pokemons.map(poke => {
                                         return (
-                                            <option value={poke.id}>{poke.id + " - " + poke.nome}</option>
+                                            <option key={poke.id} value={poke.id}>{poke.id + " - " + poke.nome}</option>
                                         )
                                     })
                                     
@@ -105,7 +105,7 @@ class FormEdit extends Component {
                         <div className="col">
                             <input name="nome" type="text" className="form-control" value={this.state.nome} onChange={e => this.handleChange(e)}/>
                         </div>
-                        <label className="col-sm-2 col-form-label">ID Evolução</label>
+                        <label className="col-sm-2 col-form-label">Id Evolução</label>
                         <div className="col">
                             <input name="evochain" type="number" min="0" className="form-control" value={this.state.evochain} onChange={e => this.handleChange(e)}/>
                         </div>

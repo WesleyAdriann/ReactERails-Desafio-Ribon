@@ -75,7 +75,7 @@ class FormEdit extends Component {
                   <div className="form-group row mt-">
                         <label className="col-sm-2 col-form-label">PokeID</label>
                             <div className="col">
-                                <input
+                                {/* <input
                                     name="id"
                                     type="number"
                                     min="0"
@@ -83,7 +83,16 @@ class FormEdit extends Component {
                                     className="form-control"
                                     placeholder={`1 - ${this.props.maxPoke}`}
                                     onChange={e => this.handleChange(e)}
-                                />
+                                /> */}
+                                <select name="id" className="custom-select" onChange={e => this.handleChange(e)}>
+                                    {this.props.pokemons.map(poke => {
+                                        return (
+                                            <option value={poke.id}>{poke.id + " - " + poke.nome}</option>
+                                        )
+                                    })
+                                    
+                                    }
+                                </select>
                             </div>
                             <div className="col-sm-1">
                                 <button type="submit" className="btn btn-primary">Abrir</button>

@@ -77,7 +77,7 @@ class App extends Component {
               <FormAdd addPokemon={this.addPokemon}/>
               </div>
               <div className="collapse" id="editForm">
-              <FormEdit maxPoke={this.state.pokemons.length}/>
+              <FormEdit maxPoke={this.state.pokemons.length} pokemons={this.state.pokemons}/>
               </div>
             </div>
           </div>
@@ -137,7 +137,8 @@ class App extends Component {
                               tipo1={poke.tipo1}
                             />
                           )
-                        }
+                        } 
+                        return ''
                       })}
                     </div>
                   </div>

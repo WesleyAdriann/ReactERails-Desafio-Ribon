@@ -8,7 +8,7 @@ class FormEdit extends Component {
     constructor(props) {
         super(props);
         this.state ={
-            id: '',
+            id: '1',
             nome: '',
             imagem: '',
             evochain: '',
@@ -18,7 +18,7 @@ class FormEdit extends Component {
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.getPokemon = this.getPokemon.bind(this);
-
+        this.handleReset = this.handleReset.bind(this);
     }
 
     handleChange(e) {
@@ -68,7 +68,19 @@ class FormEdit extends Component {
             }
         })
     }
+
+    handleReset() {
+        this.setState({
+            id: '1',
+            nome: '',
+            imagem: '',
+            evochain: '',
+            tipo0: '',
+            tipo1: '',
+        })
+    }
     render() {
+        let values = '';
         return (
             <div className="col">
                 <form onSubmit={this.getPokemon}>
@@ -84,13 +96,12 @@ class FormEdit extends Component {
                                     placeholder={`1 - ${this.props.maxPoke}`}
                                     onChange={e => this.handleChange(e)}
                                 /> */}
-                                <select name="id" className="custom-select" onChange={e => this.handleChange(e)}>
+                                <select name="id" className="custom-select" value={this.state.id} onChange={e => this.handleChange(e)}> 
                                     {this.props.pokemons.map(poke => {
                                         return (
                                             <option key={poke.id} value={poke.id}>{poke.id + " - " + poke.nome}</option>
                                         )
                                     })
-                                    
                                     }
                                 </select>
                             </div>
@@ -107,7 +118,23 @@ class FormEdit extends Component {
                         </div>
                         <label className="col-sm-2 col-form-label">Id Evolução</label>
                         <div className="col">
-                            <input name="evochain" type="number" min="0" className="form-control" value={this.state.evochain} onChange={e => this.handleChange(e)}/>
+                            {/* <input name="evochain" type="number" min="0" className="form-control" value={this.state.evochain} onChange={e => this.handleChange(e)}/> */}
+                            <select name="evochain" className="custom-select" value={this.state.evochain} onChange={e => this.handleChange(e)}>
+                                <option value=''/>
+                                {this.props.pokemons.map(poke => {
+                                    if(!values.includes(poke.evochain)) {
+                                        values = [values, poke.evochain]    
+                                        return ( [
+                                        <option value={poke.evochain}>{poke.evochain}</option>,
+                                        <option className="text-capitalize" disabled> - {poke.nome}</option> ]
+                                        )
+                                    } else {      
+                                        return <option className="text-capitalize" disabled> - {poke.nome}</option>
+                                    }   
+                                })
+                                }
+                                <div/>
+                            </select>
                         </div>
                     </div>
                     <div className="form-group row">
@@ -127,7 +154,7 @@ class FormEdit extends Component {
                     </div>
                     
                         <button type="submit" className="btn btn-primary">Salvar</button> &nbsp;
-                        <button type="reset" className="btn btn-primary">Limpar</button> 
+                        <button type="reset" className="btn btn-primary" onClick={this.handleReset}>Limpar</button> 
                 </form>
             </div>
         )

@@ -15,12 +15,24 @@ class FormAdd extends Component {
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleReset = this.handleReset.bind(this);
     }
 
     handleChange(e) {
         const {value, name} = e.target;
         this.setState({
           [name] : value
+        })
+    }
+
+    handleReset() {
+        this.setState({
+            id: '',
+            nome: '',
+            imagem: '',
+            evochain: '',
+            tipo0: '',
+            tipo1: '',
         })
     }
 
@@ -34,8 +46,7 @@ class FormAdd extends Component {
             alert("Insira um URL de imagem");
         } else if (this.state.tipo0 === '' && this.state.tipo1 === '') {
             alert("Seleciona pelo menos 1 tipo")
-        } else {
-            
+        } else { 
             axios({
                 method: 'post',
                 url: 'http://localhost:3001/pokemons',
@@ -57,8 +68,9 @@ class FormAdd extends Component {
             
         }
     }
-
     render () {
+        let values = '';
+        let last;
         return (
             <div className="col">
                 <form onSubmit={this.handleSubmit}>
@@ -69,7 +81,23 @@ class FormAdd extends Component {
                         </div>
                         <label className="col-sm-2 col-form-label">Id Evolução</label>
                         <div className="col">
-                            <input name="evochain" type="number" min="0" className="form-control" onChange={e => this.handleChange(e)}/>
+                            {/* <input name="evochain" type="number" min="0" className="form-control" onChange={e => this.handleChange(e)}/> */}
+                            <select name="evochain" className="custom-select" value={this.state.evochain} onChange={e => this.handleChange(e)}>  
+                                <option disabled/>
+                                {this.props.pokemons.map(poke => {
+                                    last = poke.evochain
+                                    if(!values.includes(poke.evochain)) {
+                                        values = [values, poke.evochain]
+                                        return ( [
+                                        <option value={poke.evochain}>{poke.evochain}</option>,
+                                        <option className="text-capitalize" disabled> - {poke.nome}</option> ]
+                                        )
+                                    } else {      
+                                        return <option className="text-capitalize" disabled> - {poke.nome}</option>
+                                    }   
+                                })}
+                                <option value={parseInt(last) + 1}>Novo</option>
+                            </select>
                         </div>
                     </div>
                     <div className="form-group row">
@@ -89,7 +117,7 @@ class FormAdd extends Component {
                     </div>
                     
                         <button type="submit" className="btn btn-primary mb-2">Salvar</button> &nbsp;
-                        <button type="reset" className="btn btn-primary mb-2">Limpar</button> 
+                        <button type="reset" className="btn btn-primary mb-2" onClick={this.handleReset}>Limpar</button> 
                 </form>
             </div>
 

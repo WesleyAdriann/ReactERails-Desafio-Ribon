@@ -47,26 +47,36 @@ class FormEdit extends Component {
 
     handleSubmit(e) {
         e.preventDefault();
-        let id = parseInt(this.state.id);
-        axios({
-            method: 'put',
-            url: `http://localhost:3001/pokemons/${id}`,
-            data : {
-                "nome" : this.state.nome,
-                "imagem" : this.state.imagem,
-                "evochain" : parseInt(this.state.evochain),
-                "tipo0" : this.state.tipo0,
-                "tipo1" : this.state.tipo1
-            }
-        }).then(response => {
-            if(response.status === 200) {
-                alert("Atualizado com sucesso");
-                window.location.reload();
-                
-            } else {
-                alert("Não foi possivel Editar");
-            }
-        })
+        if(this.state.nome === '') {
+            alert("Insira um nome");
+        } else if (this.state.evochain === '') {
+            alert("Insira uma ID de evolução");
+        } else if (this.state.imagem === '') {
+            alert("Insira um URL de imagem");
+        } else if (this.state.tipo0 === '' && this.state.tipo1 === '') {
+            alert("Seleciona pelo menos 1 tipo")
+        } else { 
+            let id = parseInt(this.state.id);
+            axios({
+                method: 'put',
+                url: `http://localhost:3001/pokemons/${id}`,
+                data : {
+                    "nome" : this.state.nome,
+                    "imagem" : this.state.imagem,
+                    "evochain" : parseInt(this.state.evochain),
+                    "tipo0" : this.state.tipo0,
+                    "tipo1" : this.state.tipo1
+                }
+            }).then(response => {
+                if(response.status === 200) {
+                    alert("Atualizado com sucesso");
+                    window.location.reload();
+                    
+                } else {
+                    alert("Não foi possivel Editar");
+                }
+            })
+        }
     }
 
     handleReset() {
@@ -81,6 +91,7 @@ class FormEdit extends Component {
     }
     render() {
         let values = '';
+        let last;
         return (
             <div className="col">
                 <form onSubmit={this.getPokemon}>
@@ -122,6 +133,7 @@ class FormEdit extends Component {
                             <select name="evochain" className="custom-select" value={this.state.evochain} onChange={e => this.handleChange(e)}>
                                 <option value=''/>
                                 {this.props.pokemons.map(poke => {
+                                    last = poke.evochain
                                     if(!values.includes(poke.evochain)) {
                                         values = [values, poke.evochain]    
                                         return ( [
@@ -133,6 +145,7 @@ class FormEdit extends Component {
                                     }   
                                 })
                                 }
+                                <option value={parseInt(last) + 1}>Novo</option>
                                 <div/>
                             </select>
                         </div>
